@@ -42,4 +42,5 @@ UPDATE geocd_nj
 	WHERE ticket = 100600001
 ;
 
-SELECT * FROM geocd_nj;
+# Sample geocoding query
+SELECT g.rating, ST_X(g.geomout), ST_Y(g.geomout), (addy).address, (addy).streetname, (addy).location, (addy).stateabbrev, (addy).zip FROM geocode('55 Bevier Rd, Piscataway, NJ 08854', 1) As g;
