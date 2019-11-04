@@ -16,7 +16,7 @@ CREATE TABLE geocd_nj (
 	hder VARCHAR (20),
 	lon DOUBLE PRECISION,
 	lat DOUBLE PRECISION,
-	st_no SMALLINT,
+	st_no VARCHAR (20),
 	st_nm VARCHAR (50),
 	city VARCHAR (50),
 	county VARCHAR (50),
